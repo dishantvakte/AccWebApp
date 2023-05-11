@@ -123,7 +123,7 @@ elif not new_address and new_zip:
 
         #Filteirng based on the input radius
         df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
-        df_2 = df[['name','city', 'state', 'postal', 'distance']]
+        df_2 = df[['name', 'state', 'postal', 'distance']]
         df_2.sort_values(by = 'distance', inplace = True)
         df_2['distance'] = round(df_2['distance'],2)
 
@@ -222,15 +222,23 @@ elif not new_address and new_zip:
 
 
 ########################################################################################################
+  
 
-#If only address is entered
-elif new_address:  
+       
+        
     
+
+
+
+elif new_address:
+    
+    #Here API for geolocation
     # Here.com API endpoint
     endpoint = "https://geocode.search.hereapi.com/v1/geocode"
     
     # Here.com API key
-    api_key = "2E8pXr9cJ07_1q93MXMV1srToClp7d5e_68Kr3fWkvo"
+    api_key = st.secrets["api_key"]
+    
     
     query = new_address
     
@@ -240,14 +248,16 @@ elif new_address:
         "apiKey": api_key,
     }
     
+    flag = 0
+    
     # Send request to Here.com API
     response = requests.get(endpoint, params=params)
     
-    # Check if request was successful
+    try:
     
+        # Check if request was successful
+        if response.status_code == 200:
     
-    if response.status_code == 200:
-        try:
         
             # Parse response JSON
             response_json = response.json()
@@ -256,28 +266,77 @@ elif new_address:
             result = response_json["items"][0]
             LAT = result["position"]["lat"]
             LNG = result["position"]["lng"]
-
-            ## Map and calculations will go here
-                
-            #Creating a copy and calculating the distance    
-            facilities_list_copy = fac_info.copy(deep = True)
-            facilities_list_copy['distance'] = facilities_list_copy.apply(calculate_distance, axis=1)
-
-            df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
-            df_2 = df[['name','city', 'state', 'postal', 'distance']]
-            df_2.sort_values(by = 'distance', inplace = True)
-            df_2['distance'] = round(df_2['distance'],2)
-
-            #Removing "KO Storage of" from the name to make it more readable
-            df_2['Facility'] = df_2['name'].str.replace(r"KO Storage of ", '')
             
+            flag = 1
+        
+########################### Added an indentation here ##################################
+        
+            facilities_list_copy = fac_info.copy(deep = True)
+    
+            facilities_list_copy['distance'] = facilities_list_copy.apply(calculate_distance, axis=1)
+    
+            df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
+        
+        
+            
+    
+            origin_coord = str(LAT) +','+str(LNG)
+    
+            api_key_dt = st.secrets["api_key_dt"]
+    
+            with_distance = pd.DataFrame()
+    
+    
+            for index, row in df.iterrows(): 
+                sub_df = pd.DataFrame()
+                dest_coord = str(row['latitude']) +','+str(row['longitude'])   
+                url =   f"https://router.hereapi.com/v8/routes?transportMode=car&origin={origin_coord}&destination={dest_coord}&return=summary&apikey={api_key_dt}"
+                sub_df["name"] = row['name']
+                sub_df['state'] = row['state']
+                response = requests.get(url)
+        
+                if response.status_code == 200:
+                    # Parse response JSON
+                    response_json = response.json()
+                    sub_df['Drive Time'] = response_json['routes'][0]['sections'][0]['summary']['duration']/3600
+                    sub_df_mins = response_json['routes'][0]['sections'][0]['summary']['duration']/60
+                    sub_df['Drive Distance'] = round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2)
+            
+            
+                    if sub_df_mins>= 60:
+                        sub_df_time = str(int(sub_df_mins//60)) + ' hrs ' +  str(int(sub_df_mins%60)) + ' mins'
+                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time]], columns = ["name", "state","Drive Time", "Drive Distance", "Time"])
+        
+                    else:    
+                        sub_df_time = str(int(sub_df_mins%60)) + 'mins'
+                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time]], columns = ["name", "state","Drive Time", "Drive Distance", "Time"])
+
+
+                    with_distance = pd.concat([with_distance, sub_df])
+            
+            
+                else:
+                # Request was unsuccessful
+                    sub_df = pd.DataFrame(data = [[row['name'],row['state'], "Process Failed", "Process Failed","Process Failed"]], columns = ["name", "state","Drive Time", "Drive Distance","Time"])
+                    with_distance = pd.concat([with_distance, sub_df])
+            
+    
+            df_2 = with_distance.copy(deep = True)
+            df_2['Facility'] = df_2['name'].str.replace(r"KO Storage of ", '')
+    
+
+            #Sorting Based on Distance    
+            df_2.sort_values(by = 'Drive Distance', inplace = True)
+    
+    
+            #Adding address to the lat long df
             name = new_address
             address_df = pd.DataFrame([[name,LAT, LNG]], columns =['name', 'latitude','longitude'])
             
             
             df3 = pd.concat([df[['name','latitude','longitude']],address_df])
-            
-            
+    
+    ##################################Till here###################################
             if(len(address_df) == 1):
                 with result_display:
 
@@ -297,13 +356,16 @@ elif new_address:
 
                     #Loop through each row in the dataframe
                     
-                    if (len(df3)>1):
+                    if (len(df3)>=1):
                         for i,row in df3.iterrows():
                             #Setup the content of the popup
                             iframe = folium.IFrame(str(row["name"]))
     
-                            #Initialise the popup using the iframe
+                        #Initialise the popup using the iframe
                             popup = folium.Popup(iframe, min_width=170, max_width=170)
+                    
+                    
+                    ######################################################
     
                             if (row['name'] == new_address):
                                 #Add each row to the map
@@ -320,14 +382,14 @@ elif new_address:
                                         icon=folium.Icon(color='red', prefix='fa', icon = '')).add_to(m)
                     
                     with result_col1:
-                    #st_data = result_col1.st_folium(m, width=900)
+                        #st_data = result_col1.st_folium(m, width=900)
                         folium_static(m, width=870)
             
             
                     with result_col2:
                         df_2.reset_index(inplace = True)
                         df_2.drop(columns = ['index'], inplace = True)
-                        fig = ff.create_table(df_2[['Facility','distance','state','postal']])
+                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','state']])
                         fig.update_annotations()
                     # Make text size larger
                         for i in range(len(fig.layout.annotations)):
@@ -342,15 +404,7 @@ elif new_address:
                 with result_display_sub:
                     with display_sub1:
                         st.markdown(f"<p style='font-size:30px;border-collapse: collapse;padding: 0; margin: 0;'><b>{len(df_2)} Facilities Found</b></p>", unsafe_allow_html=True)
-
-            
-
-
-
-
-
-
-        except:
+        else:
             with result_display:
 
                 result_display_sub = st.container()
@@ -358,8 +412,68 @@ elif new_address:
                 with result_display_sub:
                     display_sub1, display_sub2 =st.columns(2)
                     with display_sub1:
-                        st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>Could not find {new_address} on the map. Try using Zipcode</p>", unsafe_allow_html=True)
+                    #if len(df3):
+                        st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>0 Could not find {new_address} on the map ELSE</p>", unsafe_allow_html=True)
+   #                 else:
+   #                     st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>Could not find {new_address} on the map</p>", unsafe_allow_html=True)
 
+    
+    
+    except:
+    
+        # Check if request was successful
+        try:
+    
+        
+            # Parse response JSON
+            response_json = response.json()
+    
+            # Extract latitude and longitude of first result
+            result = response_json["items"][0]
+            LAT = result["position"]["lat"]
+            LNG = result["position"]["lng"]
+            
+            with result_display:
+
+                result_display_sub = st.container()
+
+                with result_display_sub:
+                    display_sub1, display_sub2 =st.columns(2)
+                    with display_sub1:
+                        #if len(df3):
+                        st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>No Facilities found near {new_address}</p>", unsafe_allow_html=True)
+   #                 else:
+   #                     st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>Could not find {new_address} on the map</p>", unsafe_allow_html=True)
+
+    
+                result_col1, result_col2 = st.columns(2)
+    
+    
+                m = folium.Map(location=[LAT, LNG], 
+                            zoom_start=7, control_scale=True)
+
+                
+
+                with result_col1:
+                #st_data = result_col1.st_folium(m, width=900)
+                    folium_static(m, width=870)    
+                    
+                    
+        except:
+
+            # Parse response JSON
+            
+            with result_display:
+
+                result_display_sub = st.container()
+
+                with result_display_sub:
+                    display_sub1, display_sub2 =st.columns(2)
+                    with display_sub1:
+                        #if len(df3):
+   #                     st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>No Facilities found near {new_address}</p>", unsafe_allow_html=True)
+   #                 else:
+                        st.markdown(f"<p style='font-size:20px;border-collapse: collapse;padding: 0; margin: 0;'>Could not find {new_address} on the map</p>", unsafe_allow_html=True)
 
     
                 result_col1, result_col2 = st.columns(2)
@@ -370,11 +484,5 @@ elif new_address:
 
 
                 with result_col1:
-                    #st_data = result_col1.st_folium(m, width=900)
-                    folium_static(m, width=870)   
-    
-    
-
-        
-        
-    
+                #st_data = result_col1.st_folium(m, width=900)
+                    folium_static(m, width=870)             
