@@ -123,7 +123,7 @@ elif not new_address and new_zip:
 
         #Filteirng based on the input radius
         df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
-        df_2 = df[['name','city', 'state', 'postal', 'distance']]
+        df_2 = df[['name', 'state', 'postal', 'distance']]
         df_2.sort_values(by = 'distance', inplace = True)
         df_2['distance'] = round(df_2['distance'],2)
 
@@ -237,7 +237,8 @@ elif new_address:
     endpoint = "https://geocode.search.hereapi.com/v1/geocode"
     
     # Here.com API key
-    api_key = "2E8pXr9cJ07_1q93MXMV1srToClp7d5e_68Kr3fWkvo"
+    api_key = st.secrets["api_key"]
+    
     
     query = new_address
     
@@ -281,7 +282,7 @@ elif new_address:
     
             origin_coord = str(LAT) +','+str(LNG)
     
-            api_key_dt = "ucFB1HSI0L4dbneSN65QzExK_RLiuJ-rrBxXjJKYFDU"
+            api_key_dt = st.secrets["api_key_dt"]
     
             with_distance = pd.DataFrame()
     
