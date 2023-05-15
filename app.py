@@ -123,7 +123,7 @@ elif not new_address and new_zip:
 
         #Filteirng based on the input radius
         df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
-        df_2 = df[['name', 'state', 'postal', 'distance']]
+        df_2 = df[['name', 'state', 'postal', 'distance', 'flag', 'Status']]
         df_2.sort_values(by = 'distance', inplace = True)
         df_2['distance'] = round(df_2['distance'],2)
 
@@ -135,7 +135,8 @@ elif not new_address and new_zip:
         zip_code_lookup1.rename(columns ={'ZIP':'name', 'LAT':'latitude', 'LNG':'longitude'}, inplace = True)
 
 
-        df3 = pd.concat([df[['name','latitude','longitude']],zip_code_lookup1])
+        df3 = pd.concat([df[['name','latitude','longitude', 'Status', 'flag']],zip_code_lookup1])
+        df3.fillna('Location', inplace = True)
 
 
     if(len(zip_code_lookup1) == 1):
@@ -165,10 +166,15 @@ elif not new_address and new_zip:
                     #Initialise the popup using the iframe
                     popup = folium.Popup(iframe, min_width=170, max_width=170)
     
-                    if (row['name'] == new_zip):
+                    if (row['Status'] == "Location"):
                         #Add each row to the map
                         folium.Marker(location=[row['latitude'],row['longitude']],
                                 popup = popup, icon=folium.Icon(color='red', prefix='fa', icon = '')).add_to(m)
+                                
+                    elif (row['Status'] == "Upcoming"):
+                        #Add each row to the map
+                        folium.Marker(location=[row['latitude'],row['longitude']],
+                                popup = popup, icon=folium.Icon(color='lightgray', prefix='fa', icon = '')).add_to(m)
                     
                     else:
                         folium.Marker(location=[row['latitude'],row['longitude']],
@@ -185,11 +191,11 @@ elif not new_address and new_zip:
             with result_col2:
                 df_2.reset_index(inplace = True)
                 df_2.drop(columns = ['index'], inplace = True)
-                fig = ff.create_table(df_2[['Facility','distance','state','postal']])
+                fig = ff.create_table(df_2[['Facility','distance','state','postal','Status']])
                 fig.update_annotations()
             # Make text size larger
                 for i in range(len(fig.layout.annotations)):
-                    fig.layout.annotations[i].font.size = 16
+                    fig.layout.annotations[i].font.size = 15
 
 
                 st.write(fig)
@@ -305,11 +311,11 @@ elif new_address:
             
                     if sub_df_mins>= 60:
                         sub_df_time = str(int(sub_df_mins//60)) + ' hrs ' +  str(int(sub_df_mins%60)) + ' mins'
-                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time]], columns = ["name", "state","Drive Time", "Drive Distance", "Time"])
+                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance", "Time", "Status"])
         
                     else:    
                         sub_df_time = str(int(sub_df_mins%60)) + 'mins'
-                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time]], columns = ["name", "state","Drive Time", "Drive Distance", "Time"])
+                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance", "Time", "Status"])
 
 
                     with_distance = pd.concat([with_distance, sub_df])
@@ -317,7 +323,7 @@ elif new_address:
             
                 else:
                 # Request was unsuccessful
-                    sub_df = pd.DataFrame(data = [[row['name'],row['state'], "Process Failed", "Process Failed","Process Failed"]], columns = ["name", "state","Drive Time", "Drive Distance","Time"])
+                    sub_df = pd.DataFrame(data = [[row['name'],row['state'], "Process Failed", "Process Failed","Process Failed", row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance","Time", "Status"])
                     with_distance = pd.concat([with_distance, sub_df])
             
     
@@ -334,7 +340,8 @@ elif new_address:
             address_df = pd.DataFrame([[name,LAT, LNG]], columns =['name', 'latitude','longitude'])
             
             
-            df3 = pd.concat([df[['name','latitude','longitude']],address_df])
+            df3 = pd.concat([df[['name','latitude','longitude','Status']],address_df])
+            df3.fillna('Location', inplace = True)
     
     ##################################Till here###################################
             if(len(address_df) == 1):
@@ -367,11 +374,18 @@ elif new_address:
                     
                     ######################################################
     
-                            if (row['name'] == new_address):
+                            if (row['Status'] == 'Location'):
                                 #Add each row to the map
                                 folium.Marker(location=[row['latitude'],row['longitude']],
                                         popup = popup, icon=folium.Icon(color='red', prefix='fa', icon = '')).add_to(m)
-                    
+ 
+
+                            if (row['Status'] == 'Upcoming'):
+                                #Add each row to the map
+                                folium.Marker(location=[row['latitude'],row['longitude']],
+                                        popup = popup, icon=folium.Icon(color='gray', prefix='fa', icon = '')).add_to(m)
+                                        
+ 
                             else:
                                 folium.Marker(location=[row['latitude'],row['longitude']],
                                         popup = popup, c=row['name']).add_to(m)
@@ -389,11 +403,11 @@ elif new_address:
                     with result_col2:
                         df_2.reset_index(inplace = True)
                         df_2.drop(columns = ['index'], inplace = True)
-                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','state']])
+                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','state','Status']])
                         fig.update_annotations()
                     # Make text size larger
                         for i in range(len(fig.layout.annotations)):
-                            fig.layout.annotations[i].font.size = 16
+                            fig.layout.annotations[i].font.size = 15
 
 
                         st.write(fig)
