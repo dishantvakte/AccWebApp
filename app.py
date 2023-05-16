@@ -31,7 +31,7 @@ with header:
     st.title("KO Storage")
     
 
-@st.cache_data
+
 def load_data(path):
     return pd.read_csv(path)
     
