@@ -1,198 +1,202 @@
 name,address1,state,postal,latitude,longitude,Status,flag
-KO Storage of Elk Point,32554 477th Avenue,SD,57025,42.6696244,-96.6609304,Existing,Existing
-KO Storage of Minot 34th Ave NE,109 34th Avenue NE,ND,58703,48.2729847,-101.2898037,Existing,Existing
-KO Storage of Lebanon W Commercial St,1227 W Commercial St,MO,65536,37.6701467,-92.6793244,Existing,Existing
-KO Storage of Rush City,860 S Bremer Ave,MN,55069,45.6804109,-92.9617507,Existing,Existing
-KO Storage of Wichita N Amidon Ave,2359 North Amidon Avenue,KS,67204,37.7259188,-97.3643802,Existing,Existing
-KO Storage of Moberly Huntsville Rd,1245 Huntsville Rd,MO,65270,39.4348991,-92.453577,Existing,Existing
-KO Storage of Mineral Wells US-281,2816 South US-281,TX,76067,33.1680579,-98.1077296,Existing,Existing
-KO Storage of Milbank,104 W 12th Ave,SD,57252,45.2081836,-96.6405904,Existing,Existing
-KO Storage of Rindge,15 Sears Dr,NH,3461,42.7224125,-72.0200105,Existing,Existing
-KO Storage of Lawton Park Ave,221 SE Park Ave,OK,73501,34.5949251,-98.3808651,Existing,Existing
-KO Storage of Midland South L Street,1001 South L Street,TX,79701,31.9849461,-102.0897078,Existing,Existing
-KO Storage of Mineral Wells US-180,7703 US-180,TX,76067,32.8097174,-98.0500347,Existing,Existing
-KO Storage of Cheyenne,711 East College Dr,WY,82007,41.1010722,-104.7918642,Existing,Existing
-KO Storage of Eau Claire,7732 US Hwy 12,WI,54701,44.7883049,-91.3801763,Existing,Existing
-KO Storage of Watertown State Route 37,24561 NY-37,NY,13601,44.0220336,-75.9027487,Existing,Existing
 KO Storage of Lawton Southwest A Ave,2105 SW A Ave,OK,73501,34.6078573,-98.4199151,Existing,Existing
-KO Storage of Wisconsin Dells Hwy 16, W12908 WI-16,WI,53965,43.5829429,-89.6408782,Existing,Existing
-KO Storage of Weatherford Marilyn St,2345 Marilyn St,TX,76085,32.7872116,-97.7902785,Existing,Existing
-KO Storage of Midland Farm to Market 307,8910 Farm to Market 307,TX,79706,32.0189518,-101.9314986,Existing,Existing
+KO Storage of Midland Farm Market,8910 Farm to Market 307,TX,79706,32.0189518,-101.9314986,Existing,Existing
+KO Storage of Cheyenne,711 East College Dr,WY,82007,41.1010722,-104.7918642,Existing,Existing
+KO Storage of Milbank,104 W 12th Ave,SD,57252,45.2081836,-96.6405904,Existing,Existing
+KO Storage of Eau Claire,7732 US Hwy 12,WI,54701,44.7883049,-91.3801763,Existing,Existing
 KO Storage of Austin 10th Dr SE,1208 10th Dr SE,MN,55912,43.6556677,-92.9575924,Existing,Existing
-KO Storage of Brackettville,651 East Military Hwy,TX,78832,29.305576,-100.411835,Existing,Existing
-KO Storage of Eagle Pass Cenizo Trail,2424 Cenizo Trail,TX,78852,28.7272104,-100.4772438,Existing,Existing
-KO Storage of Midland Florida Ave,2215 W Florida Ave,TX,79701,31.9832306,-102.0945256,Existing,Existing
-KO Storage of Middleton Pinehurst Dr,2325 Pinehurst Drive,WI,53562,43.101278,-89.5391852,Existing,Existing
-KO Storage of Springfield,3861 Ballentine Pike,OH,45502,39.9853137,-83.8802874,Existing,Existing
-KO Storage of Minot 21st Ave SE,300 21st Ave SE,ND,58701,48.2099049,-101.2758804,Existing,Existing
-KO Storage of Pearsall,302 North Cherry St,TX,78061,28.8948457,-99.0968771,Existing,Existing
-KO Storage of Staatsburg,4920 Route 9,NY,12580,41.8291562,-73.9333185,Existing,Existing
-KO Storage of Weatherford Tin Top Rd,2220 Tin Top Rd,TX,76087,32.7255126,-97.7987406,Existing,Existing
+KO Storage of Lebanon W Comm,1227 W Commercial St,MO,65536,37.6701467,-92.6793244,Existing,Existing
+KO Storage of Lawton Park Ave,221 SE Park Ave,OK,73501,34.5949251,-98.3808651,Existing,Existing
+KO Storage of Baton Rouge Jefferson,12666 Jefferson Hwy,LA,70816,30.3938856,-91.0427406,Existing,Existing
+KO Storage of Rindge,15 Sears Dr,NH,3461,42.7224125,-72.0200105,Existing,Existing
+KO Storage of Weatherford Marilyn,2345 Marilyn St,TX,76085,32.7872116,-97.7902785,Existing,Existing
+KO Storage of Minot 34th Ave NE,109 34th Avenue NE,ND,58703,48.2729847,-101.2898037,Existing,Existing
+KO Storage of Elk Point,32554 477th Avenue,SD,57025,42.6696244,-96.6609304,Existing,Existing
+KO Storage of Wichita N Amidon Ave,2359 North Amidon Avenue,KS,67204,37.7259188,-97.3643802,Existing,Existing
+KO Storage of Mineral Wells US180,7703 US-180,TX,76067,32.8097174,-98.0500347,Existing,Existing
+KO Storage of Moberly Huntsville,1245 Huntsville Rd,MO,65270,39.4348991,-92.453577,Existing,Existing
+KO Storage of Watertown Route 37,24561 NY-37,NY,13601,44.0220336,-75.9027487,Existing,Existing
+KO Storage of Midland South L St,1001 South L Street,TX,79701,31.9849461,-102.0897078,Existing,Existing
+KO Storage of Wisconsin Dells 16, W12908 WI-16,WI,53965,43.5829429,-89.6408782,Existing,Existing
+KO Storage of Rush City,860 S Bremer Ave,MN,55069,45.6804109,-92.9617507,Existing,Existing
+KO Storage of Mineral Wells US-281,2816 South US-281,TX,76067,33.1680579,-98.1077296,Existing,Existing
+KO Storage of Granby Hillcrest,212 S Hillcrest Rd,MO,64844,36.916301,-94.2598353,Existing,Existing
 KO Storage of Berwick,424 School Street,ME,3901,43.2844172,-70.8069271,Existing,Existing
-KO Storage of Wisconsin Dells Hwy 13, 3631 13th Ave,WI,53965,43.724473,-89.8192214,Existing,Existing
-KO Storage of Hudson,614 Brakke Dr,WI,54016,44.968728,-92.67715,Existing,Existing
-KO Storage of Granby Hillcrest Rd,212 S Hillcrest Rd,MO,64844,36.916301,-94.2598353,Existing,Existing
-KO Storage of Heiskell Bullrun Valley,1328 W Bullrun Valley Dr,TN,37754,36.0579674,-84.06382,Existing,Existing
-KO Storage of Vermillion,812 Bower Street,SD,57069,42.7900385,-96.9432931,Existing,Existing
-KO Storage of Gilmer US-271,10620 US 271,TX,75644,32.8811849,-94.9510196,Existing,Existing
-KO Storage of Sedalia 2410 W Main St,2410 West Main Street,MO,65301,38.7144805,-93.2567518,Existing,Existing
+KO Storage of Wisconsin Dells 13, 3631 13th Ave,WI,53965,43.724473,-89.8192214,Existing,Existing
 KO Storage of Evans Mills,29777 Gardnerville Rd,NY,13637,44.099885,-75.772695,Existing,Existing
-KO Storage of Brookline,6625 W US Hwy 60,MO,65619,37.1127109,-93.484564,Existing,Existing
-KO Storage of Tomah McCoy Blvd,1100 E. McCoy Blvd,WI,54660,44.0219914,-90.4913807,Existing,Existing
+KO Storage of Pearsall,302 North Cherry St,TX,78061,28.8948457,-99.0968771,Existing,Existing
+KO Storage of Heiskell Bullrun Valley,1328 W Bullrun Valley Dr,TN,37754,36.0579674,-84.06382,Existing,Existing
+KO Storage of Weatherford Tin Top,2220 Tin Top Rd,TX,76087,32.7255126,-97.7987406,Existing,Existing
+KO Storage of Sedalia 2410 W Main,2410 West Main Street,MO,65301,38.7144805,-93.2567518,Existing,Existing
+KO Storage of Springfield,3861 Ballentine Pike,OH,45502,39.9853137,-83.8802874,Existing,Existing
+KO Storage of Tomah McCoy,1100 E. McCoy Blvd,WI,54660,44.0219914,-90.4913807,Existing,Existing
 KO Storage of Hastings,2699 Commerce Dr,MN,55033,44.7212571,-92.8441922,Existing,Existing
-KO Storage of Mineral Wells US-281 (DELETION),2816 South US-281,TX,76067,33.1680579,-98.1077296,Existing,Existing
-KO Storage of Rolla S Bishop Ave,1344 S Bishop Ave,MO,65401,37.9191229,-91.7803385,Existing,Existing
-KO Storage of Watertown Water St,632 Water St,NY,13601,43.9782483,-75.8909086,Existing,Existing
+KO Storage of Minot 21st Ave SE,300 21st Ave SE,ND,58701,48.2099049,-101.2758804,Existing,Existing
+KO Storage of Midland Florida Ave,2215 W Florida Ave,TX,79701,31.9832306,-102.0945256,Existing,Existing
+KO Storage of Brookline,6625 W US Hwy 60,MO,65619,37.1127109,-93.484564,Existing,Existing
+KO Storage of Vermillion,812 Bower Street,SD,57069,42.7900385,-96.9432931,Existing,Existing
+KO Storage of Staatsburg,4920 Route 9,NY,12580,41.8291562,-73.9333185,Existing,Existing
+KO Storage of Gilmer US-271,10620 US 271,TX,75644,32.8811849,-94.9510196,Existing,Existing
+KO Storage of Brackettville,651 East Military Hwy,TX,78832,29.305576,-100.411835,Existing,Existing
+KO Storage of Hudson,614 Brakke Dr,WI,54016,44.968728,-92.67715,Existing,Existing
+KO Storage of Eagle Pass Cenizo,2424 Cenizo Trail,TX,78852,28.7272104,-100.4772438,Existing,Existing
+KO Storage of Middleton Pinehurst Dr,2325 Pinehurst Drive,WI,53562,43.101278,-89.5391852,Existing,Existing
+KO Storage of San Angelo GreenMeadow,3435 Green Meadow Dr,TX,76904,31.4215718,-100.4940887,Existing,Existing
+KO Storage of Weatherford West Pk,113 West Park Ave,TX,76086,32.7419823,-97.7987724,Existing,Existing
+KO Storage of Springfield Scenic Ave,3120 S Scenic Ave,MO,65807,37.1579068,-93.3317496,Existing,Existing
+KO Storage of Sedalia Metallic Rd,401 Metallic Rd,MO,65301,38.7155268,-93.2602878,Existing,Existing
+KO Storage of Corpus Christi Leopard,10224 Leopard St,TX,78410,27.836196,-97.568132,Existing,Existing
 KO Storage of Louisville Crums Ln,1510 Crums Lane,KY,40216,38.1884479,-85.8032677,Existing,Existing
-KO Storage of Pleasanton Oaklawn St,2013 W Oaklawn Rd,TX,78064,28.9415574,-98.5092028,Existing,Existing
-KO Storage of Aberdeen,38422 Hwy 12,SD,57401,45.4536907,-98.552354,Existing,Existing
+KO Storage of Republic,118 W North St,MO,65738,37.1291623,-93.4810623,Existing,Existing
+KO Storage of Jones,12909 E Britton Rd,OK,73049,35.5663526,-97.30152,Existing,Existing
+KO Storage of Pillager,3118 MN-210,MN,56473,46.3386501,-94.4428333,Existing,Existing
+KO Storage of Pleasanton Oaklawn,2013 W Oaklawn Rd,TX,78064,28.9415574,-98.5092028,Existing,Existing
+KO Storage of Rolla S Bishop Ave,1344 S Bishop Ave,MO,65401,37.9191229,-91.7803385,Existing,Existing
 KO Storage of Windham,964 Roosevelt Trail,ME,4062,43.8563214,-70.4535278,Existing,Existing
 KO Storage of Bethany,7133 NW 23rd Street,OK,73008,35.493791,-97.6384309,Existing,Existing
-KO Storage of Jones,12909 E Britton Rd,OK,73049,35.5663526,-97.30152,Existing,Existing
-KO Storage of San Angelo Green Meadow Dr,3435 Green Meadow Dr,TX,76904,31.4215718,-100.4940887,Existing,Existing
-KO Storage of Springfield Scenic Ave,3120 S Scenic Ave,MO,65807,37.1579068,-93.3317496,Existing,Existing
-KO Storage of Republic,118 W North St,MO,65738,37.1291623,-93.4810623,Existing,Existing
-KO Storage of Weatherford,1712 Fort Worth Hwy,TX,76086,32.7563774,-97.7588067,Existing,Existing
-KO Storage of Berkeley Springs Valley Road South,10925 Valley Road,WV,25411,39.4801071,-78.3021001,Existing,Existing
-KO Storage of Pillager,3118 MN-210,MN,56473,46.3386501,-94.4428333,Existing,Existing
-KO Storage of Sedalia Metallic Rd,401 Metallic Rd,MO,65301,38.7155268,-93.2602878,Existing,Existing
-KO Storage of Weatherford West Park,113 West Park Ave,TX,76086,32.7419823,-97.7987724,Existing,Existing
-KO Storage of Corpus Christi Leopard St,10224 Leopard St,TX,78410,27.836196,-97.568132,Existing,Existing
+KO Storage of Aberdeen,38422 Hwy 12,SD,57401,45.4536907,-98.552354,Existing,Existing
+KO Storage of Watertown Water St,632 Water St,NY,13601,43.9782483,-75.8909086,Existing,Existing
 KO Storage of Minot 46th Ave NE,8 46th Ave NE,ND,58703,48.2828623,-101.2910564,Existing,Existing
-KO Storage of Eagle Pass Del Rio Blvd,3618 Del Rio Blvd,TX,78852,28.7667403,-100.4942506,Existing,Existing
+KO Storage of Weatherford,1712 Fort Worth Hwy,TX,76086,32.7563774,-97.7588067,Existing,Existing
+KO Storage of Berkeley Springs Valley S,10925 Valley Road,WV,25411,39.4801071,-78.3021001,Existing,Existing
+KO Storage of Weatherford Santa Fe,1319 Santa Fe Dr,TX,76086,32.7431842,-97.7815732,Existing,Existing
 KO Storage of Rolla US Hwy 63,12773 US Highway 63,MO,65401,37.9112531,-91.7764384,Existing,Existing
 KO Storage of Baxter,6897 Foley Rd South,MN,56425,46.3496668,-94.2569538,Existing,Existing
 KO Storage of Hampton,74 Oak Street,GA,30228,33.3910988,-84.2951673,Existing,Existing
 KO Storage of Juneau,N6987 WI Hwy 26,WI,53039,43.4476968,-88.6983313,Existing,Existing
-KO Storage of Weatherford Santa Fe,1319 Santa Fe Dr,TX,76086,32.7431842,-97.7815732,Existing,Existing
-KO Storage of Minot Main St N,3425 Main Street North,ND,58703,48.2738936,-101.2933138,Existing,Existing
-KO Storage of Chattanooga,4494 Pinnacle Ln,TN,37415,35.1079508,-85.2353313,Existing,Existing
+KO Storage of Eagle Pass Del Rio,3618 Del Rio Blvd,TX,78852,28.7667403,-100.4942506,Existing,Existing
+KO Storage of Harrison Goblin Dr,1414 Goblin Drive,AR,72601,36.2485459,-93.1351132,Existing,Existing
 KO Storage of Franklin E 2nd St,529 East 2nd Street,OH,45005,39.5630505,-84.2941496,Existing,Existing
+KO Storage of Powell Andersonville,8803 Andersonville Pike,TN,37849,36.1088313,-83.9746381,Existing,Existing
 KO Storage of Naples US-67,304 US 67,TX,75568,33.1991203,-94.685833,Existing,Existing
+KO Storage of Owatonna DU,1175 E Frontage Rd,MN,55060,44.0952757,-93.2390617,Existing,Existing
+KO Storage of Stoughton,1995 Barber Drive,WI,53589,42.9550671,-89.2806812,Existing,Existing
+KO Storage of Keystone Heights Annex,1029 FL-100,FL,32656,29.8034225,-82.0590428,Existing,Existing
+KO Storage of Jamestown North,1618 US-281 North,ND,58401,46.9245877,-98.7230605,Existing,Existing
+KO Storage of Wichita Falls,1602 TX-11 Loop,TX,76306,33.9389814,-98.5334809,Existing,Existing
+KO Storage of Harlingen,2426 East Tyler Ave,TX,78550,26.1891125,-97.6703682,Existing,Existing
+KO Storage of Naples,17 Serenity Hills Estates,ME,4055,43.9836361,-70.6364172,Existing,Existing
+KO Storage of Nixa Hwy CC,1710 North State Highway CC,MO,65714,37.0771786,-93.2932829,Existing,Existing
+KO Storage of Chattanooga,4494 Pinnacle Ln,TN,37415,35.1079508,-85.2353313,Existing,Existing
 KO Storage of Midland W Industrial Ave,3013 W Industrial Ave,TX,79701,31.9800967,-102.1035451,Existing,Existing
 KO Storage of Keystone Heights,7350 FL-100,FL,32656,29.7925371,-82.0434592,Existing,Existing
-KO Storage of Powell Andersonville,8803 Andersonville Pike,TN,37849,36.1088313,-83.9746381,Existing,Existing
-KO Storage of Wichita Falls,1602 TX-11 Loop,TX,76306,33.9389814,-98.5334809,Existing,Existing
-KO Storage of Keystone Heights Annex,1029 FL-100,FL,32656,29.8034225,-82.0590428,Existing,Existing
-KO Storage of Stoughton,1995 Barber Drive,WI,53589,42.9550671,-89.2806812,Existing,Existing
-KO Storage of Owatonna DU,1175 E Frontage Rd,MN,55060,44.0952757,-93.2390617,Existing,Existing
-KO Storage of Jamestown North,1618 US-281 North,ND,58401,46.9245877,-98.7230605,Existing,Existing
-KO Storage of Harlingen,2426 East Tyler Ave,TX,78550,26.1891125,-97.6703682,Existing,Existing
-KO Storage of Nixa Hwy CC,1710 North State Highway CC,MO,65714,37.0771786,-93.2932829,Existing,Existing
-KO Storage of Harrison Goblin Dr,1414 Goblin Drive,AR,72601,36.2485459,-93.1351132,Existing,Existing
-KO Storage of Naples,17 Serenity Hills Estates,ME,4055,43.9836361,-70.6364172,Existing,Existing
-KO Storage of Auburn,23 Goldthwaite Rd,ME,4210,44.0702217,-70.264207,Existing,Existing
-KO Storage of Harrah 23rd St,20131 NE 23rd St,OK,73045,35.4938392,-97.1744171,Existing,Existing
-KO Storage of Mt Pleasant 16th St,505 East 16th St,TX,75455,33.172854,-94.9607605,Existing,Existing
-KO Storage of Dixon Hwy 28,20180 Highway 28,MO,65459,37.8651933,-92.0819135,Existing,Existing
-KO Storage of Granbury,6101 Fall Creek Hwy,TX,76049,32.4123359,-97.6688275,Existing,Existing
-KO Storage of Mt Pleasant Patrick St,210 Patrick Street,TX,75455,33.1371923,-94.9705843,Existing,Existing
-KO Storage of Baton Rouge,4136 Florida Blvd,LA,70806,30.4500974,-91.1472224,Existing,Existing
-KO Storage of Billings White Rock,110 White Rock Rd,MO,65610,37.0957491,-93.5114325,Existing,Existing
-KO Storage of Texas Omaha,10881 US 259,TX,75571,33.1785854,-94.7314941,Existing,Existing
-KO Storage of Berkeley Springs Kimber Court,52 Kimber Court,WV,25411,39.6344349,-78.236801,Existing,Existing
-KO Storage of Superior Oakes,1103 Oakes Ave,WI,54880,46.7249869,-92.1077281,Existing,Existing
+KO Storage of Minot Main St N,3425 Main Street North,ND,58703,48.2738936,-101.2933138,Existing,Existing
+KO Storage of Berkeley Springs Valley N,5402 Valley Road,WV,25411,39.5557182,-78.2685043,Existing,Existing
 KO Storage of Jamestown South,830 18th Street SW,ND,58401,46.8907428,-98.72079,Existing,Existing
-KO Storage of Berkeley Springs Valley Road North,5402 Valley Road,WV,25411,39.5557182,-78.2685043,Existing,Existing
-KO Storage of Superior Elmira / N 58th,2030 Elmira Ave,WI,54880,46.7138119,-92.114338,Existing,Existing
-KO Storage of Granbury 2200 Fall Creek Hwy,2200 Fall Creek Highway,TX,76049,32.4585387,-97.6909666,Existing,Existing
-KO Storage of Brainerd,15237 Edgewood Dr.,MN,56425,46.3727499,-94.2480702,Existing,Existing
-KO Storage of Odessa W 10th St,3610 W 10th St,TX,79763,31.8397901,-102.4094702,Existing,Existing
-KO Storage of Monticello Jackson Lake Rd,4451 Jackson Lake Rd,GA,31064,33.3773825,-83.8193956,Existing,Existing
-KO Storage of Valley City,2535 W Main St,ND,58072,46.9131907,-98.0379522,Existing,Existing
-KO Storage of San Benito,1775 US-77,TX,78586,26.154069,-97.6519076,Existing,Existing
 KO Storage of Tipp City,4395 Lisa Dr,OH,45371,39.8886555,-84.1377421,Existing,Existing
+KO Storage of Brainerd,15237 Edgewood Dr.,MN,56425,46.3727499,-94.2480702,Existing,Existing
+KO Storage of Berkeley Springs Kimber,52 Kimber Court,WV,25411,39.6344349,-78.236801,Existing,Existing
+KO Storage of Monticello Jackson Lake,4451 Jackson Lake Rd,GA,31064,33.3773825,-83.8193956,Existing,Existing
+KO Storage of Mt Pleasant 16th St,505 East 16th St,TX,75455,33.172854,-94.9607605,Existing,Existing
 KO Storage of Clinton Hinckley Rd,26B Hinckley Rd,ME,4927,44.6365944,-69.5113267,Existing,Existing
-KO Storage of Superior 2343 Elmira Ave,2343 Elmira Ave,WI,54880,46.7095912,-92.1153575,Existing,Existing
-KO Storage of Niceville Government Ave,216 Government Avenue,FL,32578,30.5180499,-86.5046685,Existing,Existing
-KO Storage of Fort Drum,26026 US-11,NY,13637,44.0437191,-75.8371856,Existing,Existing
-KO Storage of Mississippi Gorenflo Rd,10539 Gorenflo Rd,MS,39540,30.4398126,-88.8877887,Existing,Existing
-KO Storage of Sedalia Stone Creek Dr,1521 Stone Creek Drive,MO,65301,38.7004644,-93.2697183,Existing,Existing
-KO Storage of San Angelo Ben Ficklin Rd,3901 Ben Ficklin Rd,TX,76903,31.4219823,-100.4426414,Existing,Existing
-KO Storage of Talco,310 N 1st St,TX,75487,33.3653189,-95.1090291,Existing,Existing
-KO Storage of Wichita Falls North,2461 Reilly Rd,TX,76306,33.9803178,-98.5358834,Existing,Existing
+KO Storage of San Benito,1775 US-77,TX,78586,26.154069,-97.6519076,Existing,Existing
+KO Storage of Baton Rouge,4136 Florida Blvd,LA,70806,30.4500974,-91.1472224,Existing,Existing
+KO Storage of Harrah 23rd St,20131 NE 23rd St,OK,73045,35.4938392,-97.1744171,Existing,Existing
+KO Storage of Dixon Hwy 28,20180 Highway 28,MO,65459,37.8651933,-92.0819135,Existing,Existing
+KO Storage of Billings White Rock,110 White Rock Rd,MO,65610,37.0957491,-93.5114325,Existing,Existing
+KO Storage of Superior Elmira / N 58th,2030 Elmira Ave,WI,54880,46.7138119,-92.114338,Existing,Existing
+KO Storage of Auburn,23 Goldthwaite Rd,ME,4210,44.0702217,-70.264207,Existing,Existing
+KO Storage of Superior Oakes,1103 Oakes Ave,WI,54880,46.7249869,-92.1077281,Existing,Existing
+KO Storage of Valley City,2535 W Main St,ND,58072,46.9131907,-98.0379522,Existing,Existing
+KO Storage of Mt Pleasant Patrick St,210 Patrick Street,TX,75455,33.1371923,-94.9705843,Existing,Existing
+KO Storage of Granbury,6101 Fall Creek Hwy,TX,76049,32.4123359,-97.6688275,Existing,Existing
+KO Storage of Texas Omaha,10881 US 259,TX,75571,33.1785854,-94.7314941,Existing,Existing
+KO Storage of Odessa W 10th St,3610 W 10th St,TX,79763,31.8397901,-102.4094702,Existing,Existing
+KO Storage of Granbury 2200,2200 Fall Creek Highway,TX,76049,32.4585387,-97.6909666,Existing,Existing
 KO Storage of Willmar,1706 East Hwy 12,MN,56201,45.1237595,-95.019358,Existing,Existing
 KO Storage of Watertown Hwy 283,24452 NY-283,NY,13601,43.9858758,-75.8820791,Existing,Existing
-KO Storage of Sanford,23 Smada Dr,ME,4073,43.3988182,-70.6976718,Existing,Existing
 KO Storage of Granger,52336 Ash Rd,IN,46530,41.7337956,-86.0597909,Existing,Existing
-KO Storage of Addis,3648 Belle Vale Dr,LA,70710,30.3719088,-91.2558334,Existing,Existing
-KO Storage of Gainesville,2326 Browns Bridge Rd,GA,30504,34.2771544,-83.85687,Existing,Existing
-KO Storage of Harrison 1901 Airport Rd,1901 Airport Road,AR,72601,36.2526292,-93.1521635,Existing,Existing
+KO Storage of Sanford,23 Smada Dr,ME,4073,43.3988182,-70.6976718,Existing,Existing
+KO Storage of Niceville Govt. Ave,216 Government Avenue,FL,32578,30.5180499,-86.5046685,Existing,Existing
+KO Storage of Fort Drum,26026 US-11,NY,13637,44.0437191,-75.8371856,Existing,Existing
+KO Storage of Sedalia Stone Creek Dr,1521 Stone Creek Drive,MO,65301,38.7004644,-93.2697183,Existing,Existing
+KO Storage of San Angelo BenFicklin,3901 Ben Ficklin Rd,TX,76903,31.4219823,-100.4426414,Existing,Existing
+KO Storage of Superior 2343 Elmira,2343 Elmira Ave,WI,54880,46.7095912,-92.1153575,Existing,Existing
+KO Storage of Mississippi Gorenflo,10539 Gorenflo Rd,MS,39540,30.4398126,-88.8877887,Existing,Existing
+KO Storage of Talco,310 N 1st St,TX,75487,33.3653189,-95.1090291,Existing,Existing
+KO Storage of Wichita Falls North,2461 Reilly Rd,TX,76306,33.9803178,-98.5358834,Existing,Existing
+KO Storage of Harrison 1901,1901 Airport Road,AR,72601,36.2526292,-93.1521635,Existing,Existing
 KO Storage of Sedalia Greenridge Rd,3505 Greenridge Rd,MO,65301,38.680711,-93.2550625,Existing,Existing
 KO Storage of Tomah Superior Ave,1355 N Superior Ave,WI,54660,44.00742,-90.5041861,Existing,Existing
 KO Storage of Tulsa East Virgin St,6565 East Virgin St,OK,74115,36.1846505,-95.9035568,Existing,Existing
 KO Storage of Owatonna CC,1210 East Frontage Rd,MN,55060,44.095584,-93.241678,Existing,Existing
-KO Storage of Murfreesboro Veterans Parkway,149 Veterans Pkwy,TN,37128,35.7859287,-86.4037408,Existing,Existing
+KO Storage of Murfreesboro Veterans,149 Veterans Pkwy,TN,37128,35.7859287,-86.4037408,Existing,Existing
+KO Storage of Addis,3648 Belle Vale Dr,LA,70710,30.3719088,-91.2558334,Existing,Existing
+KO Storage of Gainesville,2326 Browns Bridge Rd,GA,30504,34.2771544,-83.85687,Existing,Existing
+KO Storage of Pittsburg,2625 US Hwy 271 N,TX,75686,33.0306193,-94.9622329,Existing,Existing
+KO Storage of Cass County,1768 Alfalfa Trail SW,MN,56473,46.338256,-94.3730889,Existing,Existing
+KO Storage of Oxford,872 Main St,ME,4270,44.154455,-70.4892874,Existing,Existing
+KO Storage of Tomah Townline Rd,1655 Townline Rd,WI,54660,43.9860809,-90.4780805,Existing,Existing
+KO Storage of Richmond Main St,728 Main Street,ME,4357,44.097052,-69.8676889,Existing,Existing
+KO Storage of Mississippi Lemoyne,10370 Lemoyne Blvd,MS,39540,30.4362592,-88.8893339,Existing,Existing
+KO Storage of Cleburne,791 E. Katherine P Rains Rd,TX,76031,32.3793931,-97.3807589,Existing,Existing
+KO Storage of Black River Falls,816 Alder St,WI,54615,44.3079759,-90.8496062,Existing,Existing
+KO Storage of Bemidji,500 Sunnyside Rd SE,MN,56601,47.4611546,-94.7777098,Existing,Existing
+KO Storage of Tomah Washington St,202 E Washington St,WI,54660,43.9851205,-90.5028046,Existing,Existing
 KO Storage of Louisville Turnpike,8204 National Turnpike,KY,40214,38.1307517,-85.7511829,Existing,Existing
 KO Storage of Portage North,N8323 County Rd CX,WI,53901,43.5820245,-89.4685681,Existing,Existing
-KO Storage of Chattanooga Hwy 58,4819 TN-58,TN,37416,35.0919097,-85.1858218,Existing,Existing
 KO Storage of Harrah,2504 S Harrah Rd,OK,73045,35.4396974,-97.1579833,Existing,Existing
-KO Storage of Bemidji,500 Sunnyside Rd SE,MN,56601,47.4611546,-94.7777098,Existing,Existing
-KO Storage of Del City,4321 Southeast 33rd Street,OK,73115,35.4322184,-97.4399524,Existing,Existing
-KO Storage of Cass County,1768 Alfalfa Trail SW,MN,56473,46.338256,-94.3730889,Existing,Existing
-KO Storage of Tomah Townline Rd,1655 Townline Rd,WI,54660,43.9860809,-90.4780805,Existing,Existing
-KO Storage of Pittsburg,2625 US Hwy 271 N,TX,75686,33.0306193,-94.9622329,Existing,Existing
-KO Storage of Oxford,872 Main St,ME,4270,44.154455,-70.4892874,Existing,Existing
-KO Storage of Richmond Main St,728 Main Street,ME,4357,44.097052,-69.8676889,Existing,Existing
-KO Storage of Black River Falls,816 Alder St,WI,54615,44.3079759,-90.8496062,Existing,Existing
-KO Storage of Cleburne,791 E. Katherine P Rains Rd,TX,76031,32.3793931,-97.3807589,Existing,Existing
-KO Storage of Tomah Washington St,202 E Washington St,WI,54660,43.9851205,-90.5028046,Existing,Existing
-KO Storage of Mississippi Lemoyne Blvd,10370 Lemoyne Blvd,MS,39540,30.4362592,-88.8893339,Existing,Existing
 KO Storage of Amery,487 Wisconsin 46,WI,54001,45.2796883,-92.369572,Existing,Existing
-KO Storage of Starke,1650 South Walnut Street,FL,32091,29.929923,-82.119854,Existing,Existing
+KO Storage of Chattanooga Hwy 58,4819 TN-58,TN,37416,35.0919097,-85.1858218,Existing,Existing
+KO Storage of Del City,4321 Southeast 33rd Street,OK,73115,35.4322184,-97.4399524,Existing,Existing
+KO Storage of Springfield Golden Ave,3108 S Golden Ave,MO,65807,37.1585829,-93.3412065,Existing,Existing
 KO Storage of Mt Vernon,699 Interstate 30 Service Road,TX,75457,33.1615958,-95.2425544,Existing,Existing
+KO Storage of Starke,1650 South Walnut Street,FL,32091,29.929923,-82.119854,Existing,Existing
 KO Storage of Ozark,601 E South St,MO,65721,37.0053056,-93.2017414,Existing,Existing
-KO Storage of San Angelo Chadbourne St,2510 N Chadbourne St,TX,76903,31.4863464,-100.4518396,Existing,Existing
+KO Storage of San Angelo Chadbourne,2510 N Chadbourne St,TX,76903,31.4863464,-100.4518396,Existing,Existing
 KO Storage of Gilmer TX-300,1262 TX-300,TX,75645,32.7138378,-94.9328006,Existing,Existing
-KO Storage of Sedalia 1526 W Main St,1526 W Main St,MO,65301,38.7138596,-93.2454564,Existing,Existing
+KO Storage of Sedalia 1526 W Main,1526 W Main St,MO,65301,38.7138596,-93.2454564,Existing,Existing
 KO Storage of Azle,1250 Sandy Beach Road,TX,76020,32.9276992,-97.5236556,Existing,Existing
 KO Storage of Knapp,607 US-12,WI,54749,44.9536594,-92.0880912,Existing,Existing
 KO Storage of Wichita E Pawnee St,4545 E Pawnee St,KS,67218,37.6491192,-97.2840645,Existing,Existing
-KO Storage of Springfield Golden Ave,3108 S Golden Ave,MO,65807,37.1585829,-93.3412065,Existing,Existing
-KO Storage of Noble,8500 US-77,OK,73068,35.1147714,-97.3788589,Existing,Existing
 KO Storage of Patterson,213 Tiffany St,LA,70392,29.6827929,-91.3046992,Existing,Existing
-KO Storage of Minot South,1908 Hiawatha St SE,ND,58701,48.2126346,-101.2810833,Existing,Existing
 KO Storage of Minot,3500 N Broadway,ND,58703,48.2748169,-101.2947921,Existing,Existing
-KO Storage of Portage Hwy 33,W7450 Hwy 33,WI,53901,43.5562247,-89.3731378,Existing,Existing
-KO Storage of Mt Pleasant FM127,7085 Farm to Market Road 127,TX,75455,33.094953,-95.0863223,Existing,Existing
+KO Storage of Sedalia State Hwy B,23650 State Hwy B,MO,65301,38.677866,-93.2556731,Existing,Existing
+KO Storage of Murfreesboro Church,2704 South Church Street,TN,37127,35.7966492,-86.3995986,Existing,Existing
+KO Storage of Cheyenne Prosser Rd,207 E Prosser Rd,WY,82007,41.1057751,-104.7988849,Existing,Existing
 KO Storage of Portage East,740 E Albert St,WI,53901,43.5485274,-89.450691,Existing,Existing
 KO Storage of Minot North,4815 N Broadway,ND,58703,48.2856412,-101.2973946,Existing,Existing
-KO Storage of Centerton,1601 W Centerton Blvd,AR,72719,36.3585037,-94.308283,Existing,Existing
-KO Storage of Springfield Farm Rd,3909 E Farm Road 94,MO,65803,37.273317,-93.211633,Existing,Existing
-KO Storage of Cheyenne Prosser Rd,207 E Prosser Rd,WY,82007,41.1057751,-104.7988849,Existing,Existing
-KO Storage of Murfreesboro Church St,2704 South Church Street,TN,37127,35.7966492,-86.3995986,Existing,Existing
+KO Storage of Mt Pleasant FM127,7085 Farm to Market Road 127,TX,75455,33.094953,-95.0863223,Existing,Existing
 KO Storage of Nixa 40th St,1091 N 40th St,MO,65714,37.0353564,-93.2577929,Existing,Existing
 KO Storage of Franklin N Main St,1073 North Main Street,OH,45005,39.5788121,-84.2943257,Existing,Existing
-KO Storage of Del Rio,3695 Veterans Blvd,TX,78840,29.4073236,-100.9040417,Existing,Existing
-KO Storage of Pleasanton,1254 West Oaklawn Rd,TX,78064,28.9508845,-98.4991464,Existing,Existing
-KO Storage of Sedalia State Hwy B,23650 State Hwy B,MO,65301,38.677866,-93.2556731,Existing,Existing
 KO Storage of Superior,2634 Elmira Ave,WI,54880,46.7066779,-92.114332,Existing,Existing
-KO Storage of Mauston,W 5285 WI-82,WI,53948,43.7954294,-90.0344608,Existing,Existing
-KO Storage of Pittsfield Main St,472 Main Street,ME,4967,44.7743412,-69.392972,Existing,Existing
-KO Storage of Portage Thompson,1111 Thompson St,WI,53901,43.5351181,-89.442858,Existing,Existing
+KO Storage of Centerton,1601 W Centerton Blvd,AR,72719,36.3585037,-94.308283,Existing,Existing
+KO Storage of Springfield Farm Rd,3909 E Farm Road 94,MO,65803,37.273317,-93.211633,Existing,Existing
+KO Storage of Minot South,1908 Hiawatha St SE,ND,58701,48.2126346,-101.2810833,Existing,Existing
+KO Storage of Pleasanton,1254 West Oaklawn Rd,TX,78064,28.9508845,-98.4991464,Existing,Existing
+KO Storage of Portage Hwy 33,W7450 Hwy 33,WI,53901,43.5562247,-89.3731378,Existing,Existing
+KO Storage of Del Rio,3695 Veterans Blvd,TX,78840,29.4073236,-100.9040417,Existing,Existing
+KO Storage of Noble,8500 US-77,OK,73068,35.1147714,-97.3788589,Existing,Existing
 KO Storage of Rush City South,1310 South Bremer Ave,MN,55069,45.6751348,-92.9604859,Existing,Existing
-KO Storage of Harrison 1700 Airport Rd,1700 Airport Road,AR,72601,36.2488853,-93.1544765,Existing,Existing
+KO Storage of Harrison 1700,1700 Airport Road,AR,72601,36.2488853,-93.1544765,Existing,Existing
 KO Storage of Weatherford Eureka,911 Eureka St,TX,76086,32.749512,-97.781566,Existing,Existing
+KO Storage of Odessa W University,9341 W University Blvd,TX,79764,31.8440206,-102.4848805,Existing,Existing
+KO Storage of Detroit Lakes US-59,18550 US-59,MN,56501,46.8407848,-95.8619424,Existing,Existing
+KO Storage of Chattanooga Crawford,1415 Crawford Street,TN,37421,35.0259126,-85.1901534,Existing,Existing
 KO Storage of Nisswa,4745 Co Rd 77,MN,56468,46.4987913,-94.3031207,Existing,Existing
 KO Storage of Wichita S Hydraulic Ave,122 South Hydraulic Avenue,KS,67211,37.6854244,-97.3168943,Existing,Existing
-KO Storage of Odessa W University Blvd,9341 W University Blvd,TX,79764,31.8440206,-102.4848805,Existing,Existing
-KO Storage of Detroit Lakes US-59,18550 US-59,MN,56501,46.8407848,-95.8619424,Existing,Existing
-KO Storage of Chattanooga Crawford St,1415 Crawford Street,TN,37421,35.0259126,-85.1901534,Existing,Existing
 KO Storage of Nixa Kathryn St,703 Kathryn Street,MO,65714,37.0603605,-93.3108999,Existing,Existing
 KO Storage of Port Allen,2583 Court St,LA,70767,30.4505117,-91.2377298,Existing,Existing
 KO Storage of Somersworth,108 Tri City Rd.,NH,3878,43.2283259,-70.8815601,Existing,Existing
-KO Storage of Baton Rouge Jefferson Hwy,"12666 Jefferson Hwy, Baton Rouge",LA,70816,30.3938856,-91.0427406,Existing,Existing
-KO Storage of Bonne Terre Carzon Rd,"7510 Carzon Road, Bonne Terre",MO,63628,37.922497,-90.5341682,Upcoming,Upcoming
-KO Storage of Bonne Terre Oak St,"25 Oak Street, Bonne Terre",MO,63628,37.9189992,-90.5499186,Upcoming,Upcoming
-KO Storage of Cleveland N Peninsula Dr E,"1881 North Peninsula Drive East, Cleveland",OK,74020,36.1912456,-96.2742465,Upcoming,Upcoming
-KO Storage of Harrah Oklahoma St,"29525 Oklahoma Street, Harrah",OK,73045,35.4344271,-97.1326146,Upcoming,Upcoming
-KO Storage of Jackson Mayhew Rd,"1475 Mayhew Road, Jackson",OH,45640,39.0280244,-82.6417185,Upcoming,Upcoming
-KO Storage of Jackson Twin Oaks Dr,"190 Twin Oaks Drive, Jackson",OH,45640,39.032664,-82.6343747,Upcoming,Upcoming
-KO Storage of Marshall Drake Rd,"579 Drake Road, Marshall",MO,65340,39.0868441,-93.2030168,Upcoming,Upcoming
-KO Storage of Marshall S Odell Ave,"1263 South Odell Avenue, Marshall",MO,65340,39.1082662,-93.1952881,Upcoming,Upcoming
-KO Storage of Midland Norman,"200 Norman, Midland",TX,79701,31.9916009,-102.0832543,Upcoming,Upcoming
-KO Storage of New Castle S 103,"2359 South 103, New Castle",IN,47362,39.8980545,-85.3576594,Upcoming,Upcoming
-KO Storage of San Angelo W 19th St,"963 West 19th Street, San Angelo",TX,76903,31.4727486,-100.4616033,Upcoming,Upcoming
-KO Storage of Sanford Community Dr,65 Community Drive Sanford,ME,4073,43.4040673,-70.6979854,Upcoming,Upcoming
-KO Storage of Shawnee Westech Rd,"42003 Westech Road, Shawnee",OK,74804,35.3907791,-96.9105018,Upcoming,Upcoming
-KO Storage of Springfield Troy Rd,"3757 Troy Rd, Springfield",OH,45504,39.983259,-83.8757042,Upcoming,Upcoming
+KO Storage of Mauston,W 5285 WI-82,WI,53948,43.7954294,-90.0344608,Existing,Existing
+KO Storage of Pittsfield Main St,472 Main Street,ME,4967,44.7743412,-69.392972,Existing,Existing
+KO Storage of Portage Thompson,1111 Thompson St,WI,53901,43.5351181,-89.442858,Existing,Existing
+KO Storage of Bonne Terre Carzon Rd,7510 Carzon Road,MO,63628,37.92249602,-90.53416753,Upcoming,Upcoming
+KO Storage of Bonne Terre Oak St,25 Oak Street,MO,63628,37.91899967,-90.54992069,Upcoming,Upcoming
+KO Storage of Cleveland N Peninsula Dr E,1881 North Peninsula Drive East,OK,74020,36.19138595,-96.27399475,Upcoming,Upcoming
+KO Storage of Harrah Oklahoma St,29525 Oklahoma Street,OK,73045,35.4344308,-97.13262541,Upcoming,Upcoming
+KO Storage of Jackson Mayhew Rd,1475 Mayhew Road,OH,45640,39.0280244,-82.6417185,Upcoming,Upcoming
+KO Storage of Jackson Twin Oaks Dr,190 Twin Oaks Drive,OH,45640,39.032664,-82.6343747,Upcoming,Upcoming
+KO Storage of King Meadowbrook Dr,945 Meadowbrook Drive,NC,27021,36.26861764,-80.38906944,Upcoming,Upcoming
+KO Storage of King N Main St,138 N Main St,NC,27021,36.28315011,-80.35649088,Upcoming,Upcoming
+KO Storage of Liberal E 2nd St,1120 East 2nd Street,KS,67901,37.03895969,-100.9074955,Upcoming,Upcoming
+KO Storage of Liberal E Park St,346 E Park St,KS,67901,37.03675328,-100.9168984,Upcoming,Upcoming
+KO Storage of Marshall Drake Rd,579 Drake Road,MO,65340,39.0868441,-93.2030168,Upcoming,Upcoming
+KO Storage of Marshall S Odell Ave,1263 South Odell Avenue,MO,65340,39.1082662,-93.1952881,Upcoming,Upcoming
+KO Storage of Midland Norman,200 Norman,TX,79701,31.9916009,-102.0832543,Upcoming,Upcoming
+KO Storage of New Castle S 103,2359 South 103,IN,47362,39.8980545,-85.3576594,Upcoming,Upcoming
+KO Storage of San Angelo W 19th St,963 West 19th Street,TX,76903,31.4727486,-100.4616033,Upcoming,Upcoming
+KO Storage of Sanford Community Dr,65 Community Drive,ME,4073,43.4040673,-70.6979854,Upcoming,Upcoming
+KO Storage of Shawnee Westech Rd,42003 Westech Road,OK,74804,35.3907791,-96.9105018,Upcoming,Upcoming
+KO Storage Springfield Troy Rd,3757 Troy Road,OH,45504,39.983259,-83.8757042,Upcoming,Upcoming
+,,,,,,,
