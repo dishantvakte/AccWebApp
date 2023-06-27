@@ -23,7 +23,7 @@ dataset = st.container()
 result_display = st.container()
 
 
-#ce=reating Headers
+#creating Headers
 with subheader1:
     st.subheader("Enter the Address or Zipcode you want to search for")
 
@@ -123,7 +123,7 @@ elif not new_address and new_zip:
 
         #Filteirng based on the input radius
         df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
-        df_2 = df[['name', 'state', 'postal', 'distance', 'flag', 'Status']]
+        df_2 = df[['name', 'Units', 'SqFt', 'distance', 'flag', 'Status']]
         df_2.sort_values(by = 'distance', inplace = True)
         df_2['distance'] = round(df_2['distance'],2)
 
@@ -191,7 +191,7 @@ elif not new_address and new_zip:
             with result_col2:
                 df_2.reset_index(inplace = True)
                 df_2.drop(columns = ['index'], inplace = True)
-                fig = ff.create_table(df_2[['Facility','distance','state','postal','Status']])
+                fig = ff.create_table(df_2[['Facility','distance','Units','SqFt','Status']])
                 fig.update_annotations()
             # Make text size larger
                 for i in range(len(fig.layout.annotations)):
@@ -246,6 +246,7 @@ elif new_address:
     api_key = st.secrets["api_key"]
     
     
+    
     query = new_address
     
     # Request parameters
@@ -280,6 +281,8 @@ elif new_address:
             facilities_list_copy = fac_info.copy(deep = True)
     
             facilities_list_copy['distance'] = facilities_list_copy.apply(calculate_distance, axis=1)
+            
+            facilities_list_copy['SqFt'] = facilities_list_copy['SqFt'].astype(int)
     
             df = facilities_list_copy[facilities_list_copy['distance'] <= radius]
         
@@ -289,6 +292,7 @@ elif new_address:
             origin_coord = str(LAT) +','+str(LNG)
     
             api_key_dt = st.secrets["api_key_dt"]
+            
     
             with_distance = pd.DataFrame()
     
@@ -299,6 +303,10 @@ elif new_address:
                 url =   f"https://router.hereapi.com/v8/routes?transportMode=car&origin={origin_coord}&destination={dest_coord}&return=summary&apikey={api_key_dt}"
                 sub_df["name"] = row['name']
                 sub_df['state'] = row['state']
+                sub_df["Units"] = row['Units']
+                sub_df['SqFt'] = row['SqFt']
+                
+                
                 response = requests.get(url)
         
                 if response.status_code == 200:
@@ -311,11 +319,11 @@ elif new_address:
             
                     if sub_df_mins>= 60:
                         sub_df_time = str(int(sub_df_mins//60)) + ' hrs ' +  str(int(sub_df_mins%60)) + ' mins'
-                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance", "Time", "Status"])
+                        sub_df = pd.DataFrame(data = [[row['name'],row['Units'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status'], row['SqFt']]], columns = ["name", "Units","Drive Time", "Drive Distance", "Time", "Status","SqFt"])
         
                     else:    
                         sub_df_time = str(int(sub_df_mins%60)) + 'mins'
-                        sub_df = pd.DataFrame(data = [[row['name'],row['state'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance", "Time", "Status"])
+                        sub_df = pd.DataFrame(data = [[row['name'],row['Units'], response_json['routes'][0]['sections'][0]['summary']['duration']/3600, round(response_json['routes'][0]['sections'][0]['summary']['length']*0.00062137,2),sub_df_time, row['Status'],row['SqFt']]], columns = ["name", "Units","Drive Time", "Drive Distance", "Time", "Status","SqFt"])
 
 
                     with_distance = pd.concat([with_distance, sub_df])
@@ -323,7 +331,7 @@ elif new_address:
             
                 else:
                 # Request was unsuccessful
-                    sub_df = pd.DataFrame(data = [[row['name'],row['state'], "Process Failed", "Process Failed","Process Failed", row['Status']]], columns = ["name", "state","Drive Time", "Drive Distance","Time", "Status"])
+                    sub_df = pd.DataFrame(data = [[row['name'],row['Units'], "Process Failed", "Process Failed","Process Failed", row['Status']]], columns = ["name", "Units","Drive Time", "Drive Distance","Time", "Status"])
                     with_distance = pd.concat([with_distance, sub_df])
             
     
@@ -403,7 +411,7 @@ elif new_address:
                     with result_col2:
                         df_2.reset_index(inplace = True)
                         df_2.drop(columns = ['index'], inplace = True)
-                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','state','Status']])
+                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','Units','SqFt','Status']])
                         fig.update_annotations()
                     # Make text size larger
                         for i in range(len(fig.layout.annotations)):
@@ -474,6 +482,7 @@ elif new_address:
                     
                     
         except:
+        
 
             # Parse response JSON
             
