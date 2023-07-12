@@ -244,7 +244,7 @@ elif new_address:
     
     # Here.com API key
     #api_key = st.secrets["api_key"]
-    api_key = "2E8pXr9cJ07_1q93MXMV1srToClp7d5e_68Kr3fWkvo"
+
     
     
     query = new_address
@@ -292,7 +292,7 @@ elif new_address:
             origin_coord = str(LAT) +','+str(LNG)
     
             #api_key_dt = st.secrets["api_key_dt"]
-            api_key_dt = "kkZ3aAOulxs8L73rLdUYvebCZ9oFM4SDpoYZfyFPGO0"
+
     
             with_distance = pd.DataFrame()
     
