@@ -411,7 +411,8 @@ elif new_address:
                     with result_col2:
                         df_2.reset_index(inplace = True)
                         df_2.drop(columns = ['index'], inplace = True)
-                        fig = ff.create_table(df_2[['Facility','Time','Drive Distance','Units','SqFt','Status']])
+                        df_2['--'] = ""
+                        fig = ff.create_table(df_2[['Facility','--','Time','Drive Distance','Units','SqFt','Status']])
                         fig.update_annotations()
                     # Make text size larger
                         for i in range(len(fig.layout.annotations)):
