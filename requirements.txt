@@ -7,3 +7,4 @@ plotly==5.9.0
 Requests==2.30.0
 streamlit==1.21.0
 streamlit_folium==0.11.1
+googlemaps==4.10.0
