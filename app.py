@@ -10,10 +10,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 import requests
-import time
-import googlemaps
-import json
-from serpapi import GoogleSearch
+
 
 #Setting the title for the page
 st.set_page_config(page_title = "Find Facilities Nearby", page_icon = ":office_building:U+1F3E2", layout="wide")
@@ -38,16 +35,7 @@ with header:
 def load_data(path):
     return pd.read_csv(path)
     
- 
-#Preparing data for download
-def convert_df(df):
-    return df.to_csv()
-
- 
-#Returns distance between two coordinates
-def distance_calculator(comp_coord,fac_coord):
-    return round(geopy.distance.geodesic(comp_coord, fac_coord).mi, 3)
- 
+    
 #Taking inputs
 with dataset:
     zipcodes = load_data(r"US Zip Codes from 2013 Government Data.csv")
@@ -65,14 +53,6 @@ with dataset:
         new_zip = disp_col.number_input("Search by Zipcode", value = 55305)
         
         st.markdown(f"<p style='font-size:15px;border-collapse: collapse;padding: 0; margin: 0;'>Zipcode will be ignored if address is entered</p>", unsafe_allow_html=True)
-        st.markdown("")
-        
-        disp_col_sub1, disp_col_sub2, disp_col_sub3 = st.columns([1,1,0.5])
-        with disp_col_sub1:
-            get_competitors = st.checkbox('Get Competitors (10m)')
-            
-            
-
 
 ###################################################### Adding extra here #####################################
     
@@ -258,14 +238,13 @@ elif not new_address and new_zip:
 
 elif new_address:
     
-  
- 
     #Here API for geolocation
     # Here.com API endpoint
     endpoint = "https://geocode.search.hereapi.com/v1/geocode"
     
     # Here.com API key
     api_key = st.secrets["api_key"]
+    
     
     
     query = new_address
@@ -297,8 +276,6 @@ elif new_address:
             
             flag = 1
         
-################################################## SERP API code integration ##########################################
-
 ########################### Added an indentation here ##################################
         
             facilities_list_copy = fac_info.copy(deep = True)
@@ -315,6 +292,7 @@ elif new_address:
             origin_coord = str(LAT) +','+str(LNG)
     
             api_key_dt = st.secrets["api_key_dt"]
+            
     
             with_distance = pd.DataFrame()
     
@@ -532,96 +510,3 @@ elif new_address:
                 with result_col1:
                 #st_data = result_col1.st_folium(m, width=900)
                     folium_static(m, width=870)             
-
-
-
-if new_address and get_competitors:
-    serp_df = pd.DataFrame()
-    serp_coordinates = '@'+str(LAT)+','+str(LNG)+',15.1z'
-    serp_coordinates = serp_coordinates.replace(r" ", '')
-    starts = [20,40,60,80]
-    serp_api_key = st.secrets["serp_api_key"]
-    
-    params = {
-      "engine": "google_maps",
-      "q": "self storage",
-      "ll": serp_coordinates,
-      "type": "search",
-      "api_key": serp_api_key,
-      "start": 0
-    }
-
-    count = 0
-
-    search = GoogleSearch(params)
-    results = search.get_dict()
-    local_results = results["local_results"]
-    local_results_df = pd.DataFrame(local_results)
-    local_results_df["name"] = new_address
-    serp_df = pd.concat([serp_df, local_results_df])
-    
-    #print(serp_df)
-
-    for start in starts:
-
-        params["start"] = start
-        search = GoogleSearch(params)
-        try:
-            results = search.get_dict()
-            local_results = results["local_results"]
-            local_results_df = pd.DataFrame(local_results)
-            local_results_df["name"] = new_address    
-            serp_df = pd.concat([serp_df, local_results_df])
-            count = count +1
-            if count >= 5:
-                break
-        except:
-            break
-            
-            
-    serp_df_copy = serp_df.copy(deep = True)
-    serp_df_clean = serp_df_copy[['title','name','place_id','gps_coordinates','address','phone','website','reviews', 'rating']]
-    serp_df_clean['gps_coordinates'] = serp_df_clean['gps_coordinates'].astype(str)
-    serp_df_clean['lat_long'] = serp_df_clean['gps_coordinates'].str.replace(r"{'latitude': ", '')
-    serp_df_clean['lat_long'] = serp_df_clean['lat_long'].str.replace(r" 'longitude': ", '')
-    serp_df_clean['lat_long'] = serp_df_clean['lat_long'].str.replace(r"}", '')
-    serp_df_clean.reset_index(inplace = True)
-    serp_df_clean.drop(columns = ['index'], inplace = True)
-    serp_df_clean.drop_duplicates(inplace = True)
-    serp_df_clean = serp_df_clean.loc[:,serp_df_clean.columns != 'gps_coordinates']
-    serp_df_clean = serp_df_clean.loc[:,serp_df_clean.columns != 'place_id']
-    
-    serp_df_clean = serp_df_clean[serp_df_clean['title'] != 'KO Storage']
-    serp_coordinates = serp_coordinates.replace(r"@", '')
-    serp_coordinates = serp_coordinates.replace(r",15.1z", '')
-    serp_df_clean['ll'] = serp_coordinates
-    serp_df_clean['comp_lat'] = serp_df_clean['lat_long'].str.replace(r",.*", '')
-    serp_df_clean['comp_long'] = serp_df_clean['lat_long'].str.replace(r".*,", '')
-    serp_df_clean['lat_long'] = serp_df_clean['lat_long'].str.replace(r",", ', ')
-    serp_df_clean['ll'] = serp_df_clean['ll'].str.replace(r",", ', ')
-    
-    serp_df_clean = serp_df_clean[serp_df_clean['comp_lat'] != 'nan']
-    
-    serp_df_clean['comp_distance'] = serp_df_clean.apply(lambda x: distance_calculator(comp_coord = x['lat_long'], fac_coord = x['ll']), axis=1)
-    
-    serp_df_clean['comp_lat'] = serp_df_clean['lat_long'].str.replace(r", .*", '')
-    serp_df_clean['comp_long'] = serp_df_clean['lat_long'].str.replace(r".*, ", '')
-    serp_df_clean['lat'] = serp_df_clean['ll'].str.replace(r", .*", '')
-    serp_df_clean['long'] = serp_df_clean['ll'].str.replace(r".*, ", '')
-    serp_df_clean =  serp_df_clean[serp_df_clean['comp_distance'] <= 10]
-    serp_df_clean.drop(columns = ['lat', 'long', 'comp_lat', 'comp_long'], inplace = True)
-    serp_df_clean.rename(columns = {'ll':'search_lat_long'}, inplace = True)
-
-    with dataset:
-        with disp_col_sub2:
-            csv = convert_df(serp_df_clean)
-            st.download_button(
-            label="Download CSV:arrow_down:",
-            data=csv,
-            file_name='data.csv',
-            mime='text/csv',
-            )
-                
-
-
-
