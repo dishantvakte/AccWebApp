@@ -105,8 +105,6 @@ KO Storage of Mt Pleasant 16th St,505 East 16th St,TX,75455,33.172854,-94.960760
 KO Storage of Mt Pleasant FM127,7085 Farm to Market Road 127,TX,75455,33.094953,-95.0863223,39,15852,Existing,Existing
 KO Storage of Mt Pleasant Patrick St,210 Patrick Street,TX,75455,33.1371923,-94.9705843,360,58110,Existing,Existing
 KO Storage of Mt Vernon,699 Interstate 30 Service Road,TX,75457,33.1615958,-95.2425544,143,15150,Existing,Existing
-KO Storage of Murfreesboro Church St,2704 S Church Street,TN,37127,35.7966492,-86.3995986,122,16022,Existing,Existing
-KO Storage of Murfreesboro Veterans,149 Veterans Pkwy,TN,37128,35.7859287,-86.4037408,146,25322,Existing,Existing
 KO Storage of Naples,17 Serenity Hills Estates,ME,4055,43.9836361,-70.6364172,118,19000,Existing,Existing
 KO Storage of Naples US-67,304 US 67,TX,75568,33.1991203,-94.685833,64,6540,Existing,Existing
 KO Storage of New Castle S103,2359 S State Road 103,IN,47362,39.898042,-85.357703,258,35500,Existing,Existing
@@ -207,14 +205,23 @@ KO Storage of Mount Vernon State Hwy 39,13070 Hwy 39,MO,65712,37.0879102,-93.792
 KO Storage of Sanford Community Dr,65 Community Drive Sanford,ME,4073,43.40407,-70.698,233,46920,Existing,Existing
 KO Storage of Springfield Troy Rd,3757 Troy Road,OH,45504,39.98333,-83.8761,374,59475,Existing,Existing
 KO Storage of Vassalboro N Belfast Ave,1494 N Belfast Avenue,ME,4989,44.3647098,-69.6353717,67,8170,Existing,Existing
-KO Storage of Gray - Lewiston Rd,104 Lewiston Rd,ME,04039,43.90536531,-70.32282051,120,18300,Existing,Existing
+KO Storage of Gray - Lewiston Rd,104 Lewiston Rd,ME,4039,43.90536531,-70.32282051,120,18300,Existing,Existing
 KO Storage of Lawton - NW 20th St,2504 Northwest 20th Street,OK,73501,34.63391661,-98.42075514,82,11700,Existing,Existing
-KO Storage of Lawton - NW Fort Sill Blvd,2408 Northwest Fort Sill Boulevard,OK,73507,34.63292673,-98.40566604,254,26075,Upcoming,Upcoming
-KO Storage of Midland - S Industrial Loop,16 South Industrial Loop,TX,79701,31.9723376,-102.1057553,60,29760,Upcoming,Upcoming
-KO Storage of Milwaukee - W Silver Spring Dr,9929 W Silver Spring Dr.,WI,53225,43.11879044,-88.03684076,446,49959.5,Upcoming,Upcoming
-KO Storage of Minot - 6th St SE,1910 6th St SE,ND,58701,48.21245683,-101.2872228,159,42000,Upcoming,Upcoming
-KO Storage of Minot - U.S. Rte 2,6114 U.S. Route 2,ND,58701,48.22746918,-101.2020332,85,20372,Upcoming,Upcoming
-KO Storage of Osceola - 61st Ave,2635 61st Avenue,WI,54020,45.29731478,-92.69925273,81,18950,Upcoming,Upcoming
-KO Storage of Pittsfield - 1121 Main St,1121 Main St,ME,04967,44.76133912,-69.40158189,60,10400,Upcoming,Upcoming
+KO Storage of Lawton - NW Fort Sill Blvd,2408 Northwest Fort Sill Boulevard,OK,73507,34.63292673,-98.40566604,254,26075,Existing,Existing
+KO Storage of Midland - S Industrial Loop,16 South Industrial Loop,TX,79701,31.9723376,-102.1057553,60,29760,Existing,Existing
+KO Storage of Milwaukee - W Silver Spring Dr,9929 W Silver Spring Dr.,WI,53225,43.11879044,-88.03684076,446,49959.5,Existing,Existing
+KO Storage of Minot - 6th St SE,1910 6th St SE,ND,58701,48.21245683,-101.2872228,159,42000,Existing,Existing
+KO Storage of Minot - U.S. Rte 2,6114 U.S. Route 2,ND,58701,48.22746918,-101.2020332,85,20372,Existing,Existing
+KO Storage of Osceola - 61st Ave,2635 61st Avenue,WI,54020,45.29731478,-92.69925273,81,18950,Existing,Existing
+KO Storage of Pittsfield - 1121 Main St,1121 Main St,ME,4967,44.76133912,-69.40158189,60,10400,Existing,Existing
 KO Storage of Red Wing - Tyler Rd S,160 Tyler Road South,MN,55066,44.56604474,-92.58664019,332,40775,Existing,Existing
-KO Storage of Superior - 3214 Elmira Ave,3214 Elmira Avenue,WI,54880,46.70140686,-92.11447789,52,10400,Upcoming,Upcoming
+KO Storage of Superior - 3214 Elmira Ave,3214 Elmira Avenue,WI,54880,46.70140686,-92.11447789,52,10400,Existing,Upcoming
+KO Storage of Amherst - S Leavitt Rd,205 South Leavitt Road,OH,44001,41.39755,-82.20948,612,86900,Upcoming,Upcoming
+KO Storage of Biddeford - W Cole Rd,50 W Cole Rd,ME,4005,43.47724,-70.48639,63,10406,Upcoming,Upcoming
+KO Storage of Doylestown - Collier Dr,259 Collier Drive,OH,44001,40.96898,-81.7058,259,44800,Upcoming,Upcoming
+KO Storage of Rhinelander - Menominee Dr,1647 Menominee Drive,WI,54501,45.65668,-89.38725,209,40595,Upcoming,Upcoming
+KO Storage of Wichita - N Market St,2505 North Market Street,KS,67219,37.72826,-97.33739,0,0,Upcoming,Upcoming
+KO Storage of Wichita - W 29th St N,354 West 29th St N,KS,67204,37.73761,-97.34153,0,0,Upcoming,Upcoming
+KO Storage of Broken Arrow - N Birch Ave,1200 North Birch Avenue,OK,74012,36.05917,-95.79327,146,16300,Upcoming,Upcoming
+KO Storage of Farmington - Delassus Rd,3374 Delassus Road,MO,63640,37.7666,-90.45221,153,37680,Upcoming,Upcoming
+KO Storage of Sapulpa - OK-66,15351 Oklahoma 66,OK,74066,35.99182,-96.1639,77,11775,Upcoming,Upcoming
