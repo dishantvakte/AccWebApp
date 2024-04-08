@@ -536,7 +536,7 @@ elif new_address:
 
 
 if new_address and get_competitors:
-    st.toast('Scraping maps for competitors...')
+    
     serp_df = pd.DataFrame()
     serp_coordinates = '@'+str(LAT)+','+str(LNG)+',15.1z'
     serp_coordinates = serp_coordinates.replace(r" ", '')
@@ -622,7 +622,7 @@ if new_address and get_competitors:
             file_name='data.csv',
             mime='text/csv',
             )
-            st.toast('Ready for Download')
+            
                 
 
 
