@@ -5,7 +5,7 @@ from haversine import haversine, Unit
 from geopy.distance import geodesic
 import geopy.distance
 import folium
-from streamlit_folium import st_folium 
+from streamlit_folium import st_folium
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
@@ -266,6 +266,7 @@ elif new_address:
     
     # Here.com API key
     api_key = st.secrets["api_key"]
+
     
     
     query = new_address
@@ -536,7 +537,6 @@ elif new_address:
 
 
 if new_address and get_competitors:
-    
     serp_df = pd.DataFrame()
     serp_coordinates = '@'+str(LAT)+','+str(LNG)+',15.1z'
     serp_coordinates = serp_coordinates.replace(r" ", '')
@@ -622,7 +622,6 @@ if new_address and get_competitors:
             file_name='data.csv',
             mime='text/csv',
             )
-            
                 
 
 
