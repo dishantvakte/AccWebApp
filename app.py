@@ -4,8 +4,8 @@ from geopy.geocoders import Nominatim
 from haversine import haversine, Unit
 from geopy.distance import geodesic
 import geopy.distance
-import folium
-from streamlit_folium import st_folium, folium_static 
+#import folium
+#from streamlit_folium import st_folium, folium_static 
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
