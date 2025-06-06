@@ -5,7 +5,7 @@ from haversine import haversine, Unit
 from geopy.distance import geodesic
 import geopy.distance
 import folium
-from streamlit_folium import st_folium
+from streamlit_folium import st_folium, folium_static 
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
@@ -120,7 +120,7 @@ if not new_address and not new_zip:
 
         with result_col1:
             #st_data = result_col1.st_folium(m, width=900)
-            st_folium(m, width=870)    
+            folium_static(m, width=870)    
 
 
 
@@ -206,7 +206,7 @@ elif not new_address and new_zip:
 
             with result_col1:
             #st_data = result_col1.st_folium(m, width=900)
-                st_folium(m, width=870)
+                folium_static(m, width=870)
     
             with result_col2:
                 df_2.reset_index(inplace = True)
@@ -244,7 +244,7 @@ elif not new_address and new_zip:
 
             with result_col1:
                 #st_data = result_col1.st_folium(m, width=900)
-                st_folium(m, width=870)
+                folium_static(m, width=870)
 
 
 ########################################################################################################
@@ -428,7 +428,7 @@ elif new_address:
                     
                     with result_col1:
                         #st_data = result_col1.st_folium(m, width=900)
-                        st_folium(m, width=870)
+                        folium_static(m, width=870)
             
             
                     with result_col2:
@@ -502,7 +502,7 @@ elif new_address:
 
                 with result_col1:
                 #st_data = result_col1.st_folium(m, width=900)
-                    st_folium(m, width=870)    
+                    folium_static(m, width=870)    
                     
                     
         except:
@@ -532,7 +532,7 @@ elif new_address:
 
                 with result_col1:
                 #st_data = result_col1.st_folium(m, width=900)
-                    st_folium(m, width=870)             
+                    folium_static(m, width=870)             
 
 
 
